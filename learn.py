@@ -83,7 +83,10 @@ def palindrome2():
         message = 'not palindrome'
     return message
 
-
+def evenlist():
+    list = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+    list = [x for x in list if x % 2 ==0]
+    return list
 
 
 if __name__ == '__main__':
@@ -100,7 +103,10 @@ if __name__ == '__main__':
     # print('common list: ', listOverlap2())
 
     # testing palindrome def
-    print(palindrome2())
+    # print(palindrome2())
+
+    #testing evenlist def
+    print(evenlist())
 
 
 
