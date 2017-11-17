@@ -88,12 +88,48 @@ def evenlist():
     list = [x for x in list if x % 2 ==0]
     return list
 
+def rockPaperScissors():
+    while True:
+        p1 = input('Player1 input (r-p-s): ')
+        p2 = input('Player2 input (r-p-s): ')
+        if p1 == p2:
+            print('You are tie.')
+        elif p1 == 'r':
+            if p2 == 's':
+                print('Player1 wins.')
+            else: 
+                print('Player2 wins.')
+        elif p1 == 'p':
+            if p2 == 'r':
+                print('Player1 wins.')
+            else:
+                print('Player2 wins.')
+        elif p1 == 's':
+            if p2 == 'r':
+                print('Player 2 wins.')
+            else:
+                print('Player 1 wins.')
+
+        if (input('Continue? (yes) ') == 'yes'):
+            continue
+        else:
+            print('Game over. Bye!')
+            break
+
+
 
 if __name__ == '__main__':
     list1 = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
     list2 = [1,4, 6,3,2, 5]
     list3 = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
     list4 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+
+    rockPaperScissors()
+
+    
+
+
+
     # print(lessthanten(list))
     # print(divisor())
     # arrayPairSum2(list2)
@@ -106,7 +142,7 @@ if __name__ == '__main__':
     # print(palindrome2())
 
     #testing evenlist def
-    print(evenlist())
+    # print(evenlist())
 
 
 
